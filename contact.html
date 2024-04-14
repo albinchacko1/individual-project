@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    
+    <form action="mailto:ac9180172@gmail.com" method="post">
+        <label for="first_name">First Name:</label><br>
+        <input type="text" id="first_name" name="first_name" required><br>
+
+        <label for="last_name">Last Name:</label><br>
+        <input type="text" id="last_name" name="last_name" required><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="property_type">Type of Property:</label><br>
+        <select id="property_type" name="property_type" required>
+            <option value="house">House</option>
+            <option value="condominium">Condominium</option>
+        </select><br>
+
+        <label for="bedrooms">Number of Bedrooms:</label><br>
+        <input type="number" id="bedrooms" name="bedrooms" min="1" required><br>
+
+        <label for="bathrooms">Number of Bathrooms:</label><br>
+        <input type="number" id="bathrooms" name="bathrooms" min="1" required><br>
+
+        <label for="price_range">Price Range:</label><br>
+        <input type="text" id="price_range" name="price_range" required><br>
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4"></textarea><br>
+
+        <input type="submit" value="Submit">
+        </form>
+
+    <footer>
+        <p>&copy; 2024 Real Estate Agent. All rights reserved.</p>
+    </footer>
+</body>
+</html>
